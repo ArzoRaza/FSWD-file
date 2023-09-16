@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part-3</title>
+</head>
+<body>
+    <h1>Hello children</h1>
+    <p id="jss"></p>
+
+    <!-- button -->
+    <button onmouseenter="heyy()" id="jsss">Hello </button>
+    <script>
+        document.addEventListener("click", hello);
+        function hello () {
+            document.getElementById("jss").innerText = "To kaise hai aap log";
+        }
+
+        // button function
+        function heyy () {
+            document.getElementById("jsss").innerText = "Namaste";
+            document.getElementById("jsss").style.color = "red"
+            document.getElementById("jsss").style.backgroundColor = "yellow";
+            document.getElementById("jsss").style.padding = "250px";
+            document.getElementById("jsss").style.border = "5px solid blue";
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM part-1</title>
+</head>
+<body>
+    <!-- id -->
+    <p id="one">
+        Namaste World
+        <span>
+            kaise hai ji
+        </span>
+    </p>
+
+    <!-- class -->
+    <ul>
+        <li class="tech">one</li>
+        <li class="tech">two</li>
+        <li class="tech">three</li>
+    </ul>
+
+    <!-- tagName -->
+    <h2>Hii.</h2>
+    <h2>Heyy.</h2>
+    <h2>Hello</h2>
+
+    <!-- query selector -->
+    <h2>nana ji</h2>
+    <h2 class="ccls">arzo raza</h2>
+    <h2 id="iid">hola</h2>
+
+
+    <!-- JavaScript file  -->
+    <script>
+        // id 
+        let var1 = document.getElementById("one");
+        console.log(var1.innerText);
+        
+        // class 
+        let var2 = document.getElementsByClassName("tech");
+        console.log(var2[2].innerText);
+        var2[1].innerText = "Node.js"
+
+        // tagName 
+        let var3 = document.getElementsByTagName("h2");
+        console.log(var3[0].innerText);
+        var3[0].innerText = "TO KAISE HAI APP LOG"
+        var3[0].style.color = "yellow"
+
+        // Query selector 
+        let var4 = document.querySelector(".ccls");
+        console.log(var4);
+
+        var4.className = "md akbar";
+        var4.classList = "mo, no, to, jo ";
+        var4.setAttribute("title", "akbar");
+    </script>
+</body>
+</html>
