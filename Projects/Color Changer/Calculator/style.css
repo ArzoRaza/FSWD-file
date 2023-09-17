@@ -1,0 +1,16 @@
+body {
+    /* height: 2px; */
+    /* width: 2px; */
+    justify-content: center;
+    align-items: center ;
+    text-align: center;
+    background-color: rgb(189, 250, 250);
+}
+h1 {
+    color: rgb(39, 129, 255);
+    font-size: 50px;
+    font-style: italic;
+}
+.label{
+    font-size: 40px;
+}
